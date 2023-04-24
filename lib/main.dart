@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth_app/src/features/authentication/views/splash_screen.dart';
 import 'package:flutter_auth_app/src/utils/theme/theme.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: TtsTheme.lightTheme,
       darkTheme: TtsTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: SplashScreen(),
     );
   }
 }
