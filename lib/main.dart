@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth_app/src/utils/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    theme: ThemeData(brightness: Brightness.light),
-        darkTheme: ThemeData (brightness: Brightness.dark),
-    themeMode: ThemeMode.system,
+      theme: TtsTheme.lightTheme,
+      darkTheme: TtsTheme.darkTheme,
+      themeMode: ThemeMode.system,
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
